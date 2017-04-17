@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_theme_color_dark"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:background="@color/app_theme_selected_color"
+        android:gravity="center_vertical"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/iv_index_category"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/icon_index_toolbar_category" />
+
+        <LinearLayout
+            android:id="@+id/ll_index_search"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_bg_linearlayout"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/icon_common_toolbar_search" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:text="@string/text_search_hint"
+                android:textColor="@color/app_theme_color_light"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_index_scan"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/icon_index_toolbar_scan" />
+    </LinearLayout>
+
+    <com.tpbluesky.bookpavilion.views.FixedPtrFrameLayout
+        android:id="@+id/ptr_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:ptr_duration_to_back_refresh="300"
+        app:ptr_duration_to_close_either="300"
+        app:ptr_keep_header_when_refresh="true"
+        app:ptr_mode="both"
+        app:ptr_ratio_of_header_height_to_refresh="1.7"
+        app:ptr_resistance="1.7">
+
+        <com.tpbluesky.bookpavilion.views.ObservableScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.tpbluesky.bookpavilion.views.AdViewPager
+                    android:id="@+id/ad_viewpager"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/ad_viewpager_height" />
+
+                <GridView
+                    android:id="@+id/gv_rank"
+                    android:layout_width="match_parent"
+                    android:layout_height="95dp"
+                    android:background="@color/app_theme_color_light"
+                    android:numColumns="5"
+                    android:orientation="vertical"
+                    android:padding="12dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/app_theme_color_light"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/icon_guess_you_like" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="猜你喜欢" />
+
+                </LinearLayout>
+
+                <com.tpbluesky.bookpavilion.views.FullGridView
+                    android:id="@+id/gv_recommend"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:horizontalSpacing="3dp"
+                    android:numColumns="2"
+                    android:verticalSpacing="2dp" />
+
+            </LinearLayout>
+
+        </com.tpbluesky.bookpavilion.views.ObservableScrollView>
+    </com.tpbluesky.bookpavilion.views.FixedPtrFrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Color for ImageView border-->
+    <color name="image_border_color">#C0FF3E</color>
+
+    <!--app theme color which the background is dark-->
+    <color name="app_theme_color_dark">#FFE5E5E5</color>
+
+    <!--app theme color which the background is light -->
+    <color name="app_theme_color_light">#FFFFFFFF</color>
+
+    <!--app theme color which the item or text is selected-->
+    <color name="app_theme_selected_color">#FFEE4000</color>
+    <color name="app_theme_selected_color_disable">#99EE4000</color>
+    <color name="app_theme_selected_color_deeper">#BB4000</color>
+
+    <!--app theme color which the text is normal-->
+    <color name="app_theme_text_color_primary">#FF000000</color>
+    <color name="app_theme_text_color_second">#99000000</color>
+    <color name="app_theme_text_color_hint">#77000000</color>
+
+    <color name="app_theme_line_color">#AAAAAAAA</color>
+
+    <!--color for button get code-->
+    <color name="app_normal_button_disable">#22000000</color>
+    <color name="app_normal_button_enable">#22000000</color>
+    <color name="app_normal_button_pressed">#33000000</color>
+    <color name="app_normal_button_border">#55000000</color>
+
+</resources>

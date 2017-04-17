@@ -1,0 +1,22 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!--Toolar的高度-->
+    <dimen name="toolbar_height">50dp</dimen>
+
+    <!-- 菜单栏indicator的高度 -->
+    <dimen name="indicator_height">50dp</dimen>
+
+    <!-- 一般分割线的宽度 -->
+    <dimen name="line_width">0.5dp</dimen>
+
+    <!--分类页面左边List的Item高度-->
+    <dimen name="rv_category_left_item_height">70dp</dimen>
+    <!--分类页面左边List选中时红色条的宽度-->
+    <dimen name="category_rv_left_indicator_width">3dp</dimen>
+    <dimen name="ad_viewpager_height">150dp</dimen>
+
+</resources>
